@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>PRACTICAS JAVASCRIPT</title>
+</head>
+<body>
+    <nav class="navbar md:navbar-expand bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/aqua1.webp" alt="Bootstrap" width="30" height="24">
+                PRACTICA 2
+            </a>
+        </div>
+    </nav>
+
+    <div class="container p-4 mt-5 card bg-info">
+        <h1 class="text-center">Practica 2</h1><br>
+        <h2 class="text-center">CALCULADORA</h2><br>
+        <h5 id="ValorNumeroA">NÚMERO 1</h5>
+        <input type="range" class="form-control" id="numeroA" min="1" max="100" value="1">
+        <h5 id="ValorNumeroB">NÚMERO 1</h5>
+        <input type="range" class="form-control" id="numeroB" min="1" max="100" value="1">
+        <h5>SELECCIONAR OPERACION</h5>
+        <select class="form-control" id="operacion">
+            <option value="sumar">SUMAR</option>
+            <option value="restar">RESTAR</option>
+            <option value="multiplicar">MULTIPLICAR</option>
+            <option value="dividir">DIVIDIR</option>
+            <option value="modulo">MODULO</option>
+            <option value="potencia">POTENCIA</option>
+        </select>
+        <h2 class="text-center mt-5 bg-danger card" id="resultado">RESULTADO</h2>
+        <br>
+        <br>
+        <br>
+        <center>
+            <video src="media/Ayuda.mp4" width="640" height="360" controls></video>
+        </center>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/02app.js"></script>
+</body>
+</html>
