@@ -4,10 +4,10 @@ var numero2=document.querySelector("#masa");
 var calcular=()=>{
     var valor1=parseFloat(numero1.value);
     var valor2=parseFloat(numero2.value);
-    document.querySelector("#ValorNumeroA").innerHTML = "PESO "+valor1;
-    document.querySelector("#ValorNumeroB").innerHTML = "ESTATURA "+valor2;
+    document.querySelector("#ValorNumeroA").innerHTML = "PESO "+valor1+"kg";
+    document.querySelector("#ValorNumeroB").innerHTML = "ESTATURA "+valor2+"cm";
     document.querySelector("#resultado");
-    var IMC = ((valor1)/(valor2*valor2)).toFixed(2);
+    var IMC = ((valor1)/((valor2/100)*(valor2/100))).toFixed(2);
     if(IMC<18.5){
         resultado.innerHTML=`<div class="text-center mt-5 bg-primary card">${IMC}</div><br>
         BAJO DE PESO`;
