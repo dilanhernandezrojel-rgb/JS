@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credidepot</title>
+    <link rel="stylesheet" href="css/05styless.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+</head>
+<body onload="calcular()">
+    <nav class="navbar md:navbar-expand bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/aqua1.webp" alt="Bootstrap" width="30" height="24">
+                PRACTICA 2
+            </a>
+        </div>
+    </nav>
+    <br>
+    <img src="img/logo2.png" alt="" width="100px" height="100px">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col">
+            <h1>CREDIDEPOT</h1>
+    <br>
+    <br>
+    <h3>Producto:</h3>
+    <br>
+    <select name="" id="producto" onchange="calcular()" class="form-control ">
+        <option value="cemento">Cemento</option>
+        <option value="disco">Disco</option>
+        <option value="tabla">Tabla</option>
+        <option value="clavos">clavos para madera</option>
+        <option value="cancel">cancel de baño</option>
+    </select>
+    <br>
+    <br>
+    
+    <div id="precio">Precio: $0.00 MXN</div>
+    <br>
+    <hr>
+    <h3>Plazo</h3>
+    <input type="radio" name="plazo" id="uno" onchange="calcular()" checked>
+    6 meses (+10%)<br>
+    <input type="radio" name="plazo" id="dos" onchange="calcular()">
+    18 meses (+20%)<br>
+    <input type="radio" name="plazo" id="tres" onchange="calcular()">
+    36 meses (+30%) <br>
+    <br>
+    <br>
+    <h3>Cantidad</h3>
+    <input type="number"
+    class="form-control"
+    value="1"
+    min="1"
+    max="10"
+    id="cantidad"
+    onchange="calcular()"> <br>
+<br>
+    <div id="contado">Precio de contado: $0.00 MNX</div>
+    <div id="credito">Precio a credito: $0.00 MNX</div>
+    <div id="abono">Abono mensual: $0.00 MNX</div>
+        </div>
+        <div class="col">
+            <div id="imagen" class="card"></div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/05app.js"></script>
+</body>
+</html>

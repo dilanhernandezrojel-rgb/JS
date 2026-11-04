@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar md:navbar-expand bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/aqua1.webp" alt="Bootstrap" width="30" height="24">
+                PRACTICA 2
+            </a>
+        </div>
+    </nav>
+
+    <div class="container p-4 mt-5 card bg-info">
+        <h1 class="text-center">SIGNOS ZODIACALES</h1><br>
+        <div class="row">
+            <div class="col">
+                <h5 id="valordia">Dia 1</h5>
+                <input type="range" class="form-control" id="dia" min="1" max="30" value="1">
+                <h5>Mes</h5>
+                <select class="form-control" id="Mes">
+                    <option value="ENERO">ENERO</option>
+                    <option value="FEBBRERO">FEBRERO</option>
+                    <option value="MARZO">MARZO</option>
+                    <option value="ABRIL">ABRIL</option>
+                    <option value="MAYO">MAYO</option>
+                    <option value="JUNIO">JUNIO</option>
+                    <option value="JULIO">JULIO</option>
+                    <option value="AGOSTO">AGOSTO</option>
+                    <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+                    <option value="OCTUBRE">OCTUBRE</option>
+                    <option value="NOVIEMBRE">NOVIEMBRE</option>
+                    <option value="DICIEMBRE">DICIEMBRE</option>
+                </select>
+                <br>
+                <button class="btn btn-solid theme-danger" id="reset">Reiniciar</button>
+                <h2 id="Fecha" class="text-center mt-5">Fecha</h2>
+                <video src="media/Ayuda2.mp4" width="640" height="360" controls></video>
+            </div>
+            <div class="col">
+                <img src="img/signoPortada.jpg" id="signo" width="500px">
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/04app.js"></script>
+</body>
+</html>

@@ -7,6 +7,7 @@ function calcularSalarioNeto(){
         case 1: sueldohora=300;break;
         case 2: sueldohora=100;break;
         case 3: sueldohora=120;break;
+        case 4: sueldohora=10;break;
     }
     let sueldoBase=sueldohora*horas;
     let canastabasica=parseFloat(sueldoBase*0.025);
@@ -20,6 +21,8 @@ function calcularSalarioNeto(){
     let sindicato=parseFloat(sueldoBase*0.01);
     let totaldeducciones=parseFloat(isr+serviciosalud+afore+sindicato);
     let salarioneto=parseFloat(totalpercepciones+totaldeducciones);
+    let horasextra=parseFloat(sueldohora/30*horas);
+    let pagodeprestamo=parseFloat(sueldohora-(sueldohora*0.10));
     document.getElementById("sueldobase").innerHTML="<h3>$"+sueldoBase.toFixed(2)+"</h3>";
     document.getElementById("apoyos").innerHTML="<h3>$"+apoyo.toFixed(2)+"</h3>";
     document.getElementById("canastabasica").innerHTML="<h3>$"+canastabasica.toFixed(2)+"</h3>";
@@ -32,5 +35,7 @@ function calcularSalarioNeto(){
     document.getElementById("sindicato").innerHTML="<h3>$"+sindicato.toFixed(2)+"</h3>";
     document.getElementById("totaldeducciones").innerHTML="<h3>$"+totaldeducciones.toFixed(2)+"</h3>";
     document.getElementById("salarioneto").innerHTML="<h3>$"+salarioneto.toFixed(2)+"</h3>";
+    document.getElementById("horasextra").innerHTML="<h3>$"+horasextra.toFixed(2)+"</h3>";
+    document.getElementById("pagodeprestamo").innerHTML="<h3>$"+pagodeprestamo.toFixed(2)+"</h3>";
 
 }
