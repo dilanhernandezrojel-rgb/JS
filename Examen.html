@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
     <title>PRACTICAS JAVASCRIPT</title>
+    <style>
+        #resultado{
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar md:navbar-expand bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/aqua1.webp" alt="Bootstrap" width="30" height="24">
-                PRACTICA 2
-            </a>
-        </div>
-    </nav>
 
-    <h1 class="text-center">Practica 2</h1><br>
-        <h2 class="text-center">CALCULADORA</h2><br>
+    
     <div class="container p-4 mt-5 card bg-info">
+
+        <h1 class="text-center">Practica 2</h1><br>
+        <h2 class="text-center">CALCULADORA</h2><br>
+
         <table>
             <tr>
                 <td>
 
             
-        
+        <div class="container p-4 mt-5 card bg-warning">
         <h5 id="ValorNumeroA">NÚMERO 1</h5>
         <input type="range" class="form-control" id="numeroA" min="1" max="100" value="1">
                 </td>
                 <td>
-        <h2 class="text-center mt-5 bg-danger card" id="resultado">RESULTADO</h2>
+        </div>
+        <div class="text-center mt-5 bg-success card" id="resultado">RESULTADO</div>
+        
         </td>
         </tr>
         </table>
-        <button id="RESET" onclick="reset()">RESET</button>
+        <br>
+        <button onclick="reset()">RESET</button>
     </div>
 
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
     <script src="js/Examen.js"></script>
 </body>
 </html>

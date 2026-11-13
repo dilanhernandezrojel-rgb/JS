@@ -8,7 +8,9 @@ var calcular=()=>{
     document.querySelector("#ValorNumeroB").innerHTML = "ESTATURA "+valor2+"cm";
     document.querySelector("#resultado");
     var IMC = ((valor1)/((valor2/100)*(valor2/100))).toFixed(2);
-    if(IMC<18.5){
+    document.querySelector("#resultado").innerHTML=`<img src="img/Loading.gif" width="40px" height="40px">`;
+    setTimeout(()=>{
+        if(IMC<18.5){
         resultado.innerHTML=`<div class="text-center mt-5 bg-primary card">${IMC}</div><br>
         BAJO DE PESO`;
     }
@@ -32,6 +34,17 @@ var calcular=()=>{
         resultado.innerHTML=`<div class="text-center mt-5 bg-danger card">${IMC}</div><br>
         OBESIDAD III`;
     }
+    }, 2000)
+}
+
+var reset =()=>{
+    document.querySelector("#ValorNumeroA").innerHTML = "PESO";
+    document.querySelector("#ValorNumeroB").innerHTML = "ESTATURA";
+    var numero1=document.querySelector("#peso").value = 1;
+    var numero2=document.querySelector("#masa").value = 1;
+    document.querySelector("#resultado");
+    resultado.innerHTML=`<div class="text-center mt-5 bg-danger card">0.00</div><br>
+        ACTUALICE LOS VALORES`;
 }
 
 numero1.onchange=()=>{calcular();}
